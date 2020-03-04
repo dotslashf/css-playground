@@ -1,0 +1,97 @@
+* {
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --primary: #45aaf2;
+  --secondary: #a5b1c2;
+  --danger: #fc5c65;
+  --warning: #fd9644;
+  --success: #26de81;
+  --primary-hover: #2d98da;
+  --secondary-hover: #778ca3;
+  --success-hover: #20bf6b;
+  --danger-hover: #eb3b5a;
+  --warning-hover: #fa8231;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  margin: 0 0.5rem;
+  padding: 1rem 1.5rem;
+  background: transparent;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+.primary {
+  background: var(--primary);
+  color: whitesmoke;
+}
+
+.secondary {
+  background: var(--secondary);
+  color: white;
+}
+
+.danger {
+  background: var(--danger);
+  color: white;
+}
+
+.warning {
+  background: var(--warning);
+  color: whitesmoke;
+}
+
+.success {
+  background: var(--success);
+  color: whitesmoke;
+}
+
+.primary:hover {
+  background: var(--primary-hover);
+  color: whitesmoke;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.secondary:hover {
+  background: var(--secondary-hover);
+  color: whitesmoke;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.warning:hover {
+  background: var(--warning-hover);
+  color: whitesmoke;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.danger:hover {
+  background: var(--danger-hover);
+  color: whitesmoke;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.success:hover {
+  background: var(--success-hover);
+  color: whitesmoke;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-primary {
+  color: var(--primary);
+  font-weight: 800;
+}
