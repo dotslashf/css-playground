@@ -1,97 +1,74 @@
 * {
   border: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-:root {
-  --primary: #45aaf2;
-  --secondary: #a5b1c2;
-  --danger: #fc5c65;
-  --warning: #fd9644;
-  --success: #26de81;
-  --primary-hover: #2d98da;
-  --secondary-hover: #778ca3;
-  --success-hover: #20bf6b;
-  --danger-hover: #eb3b5a;
-  --warning-hover: #fa8231;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.btn {
+.btn, .btn-primary, .btn-outline-primary, .btn-secondary, .btn-outline-secondary, .btn-success, .btn-outline-success, .btn-warning, .btn-outline-warning, .btn-danger, .btn-outline-danger {
   margin: 0 0.5rem;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 0.75rem;
   background: transparent;
   font-weight: 700;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
   text-align: center;
+  font-size: smaller;
+  text-decoration: none;
+  border: 1px solid transparent;
 }
 
-.primary {
-  background: var(--primary);
+.btn-primary, .btn-outline-primary {
+  background-color: #54a0ff;
   color: whitesmoke;
 }
 
-.secondary {
-  background: var(--secondary);
-  color: white;
-}
-
-.danger {
-  background: var(--danger);
-  color: white;
-}
-
-.warning {
-  background: var(--warning);
+.btn-secondary, .btn-outline-secondary {
+  background-color: #00d2d3;
   color: whitesmoke;
 }
 
-.success {
-  background: var(--success);
+.btn-success, .btn-outline-success {
+  background-color: #1dd1a1;
   color: whitesmoke;
 }
 
-.primary:hover {
-  background: var(--primary-hover);
-  color: whitesmoke;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.btn-warning, .btn-outline-warning {
+  background-color: #feca57;
+  color: #222f3e;
 }
 
-.secondary:hover {
-  background: var(--secondary-hover);
+.btn-danger, .btn-outline-danger {
+  background-color: #ff6b6b;
   color: whitesmoke;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.warning:hover {
-  background: var(--warning-hover);
-  color: whitesmoke;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.btn-outline-primary {
+  color: #54a0ff;
+  border-color: #54a0ff;
+  background-color: transparent;
 }
 
-.danger:hover {
-  background: var(--danger-hover);
-  color: whitesmoke;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.btn-outline-secondary {
+  color: #00d2d3;
+  border-color: #00d2d3;
+  background-color: transparent;
 }
 
-.success:hover {
-  background: var(--success-hover);
-  color: whitesmoke;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.btn-outline-success {
+  color: #1dd1a1;
+  border-color: #1dd1a1;
+  background-color: transparent;
 }
 
-.text-primary {
-  color: var(--primary);
-  font-weight: 800;
+.btn-outline-danger {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+  background-color: transparent;
 }
+
+.btn-outline-warning {
+  color: #feca57;
+  border-color: #feca57;
+  background-color: transparent;
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,81 @@
+@import "main";
+@import "variable";
+
+.btn {
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    font-size: smaller;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    @extend .btn;
+    background-color: $primary;
+    color: whitesmoke;
+}
+
+.btn-secondary {
+    @extend .btn;
+    background-color: $secondary;
+    color: whitesmoke;
+}
+
+.btn-success {
+    @extend .btn;
+    background-color: $success;
+    color: whitesmoke;
+}
+
+.btn-warning {
+    @extend .btn;
+    background-color: $warning;
+    color: $dark;
+}
+
+.btn-danger {
+    @extend .btn;
+    background-color: $danger;
+    color: whitesmoke;
+}
+
+.btn-outline-primary {
+    @extend .btn-primary;
+    color: $primary;
+    border-color: $primary;
+    background-color: transparent;
+}
+
+.btn-outline-secondary {
+    @extend .btn-secondary;
+    color: $secondary;
+    border-color: $secondary;
+    background-color: transparent;
+}
+
+.btn-outline-success {
+    @extend .btn-success;
+    color: $success;
+    border-color: $success;
+    background-color: transparent;
+}
+
+.btn-outline-danger {
+    @extend .btn-danger;
+    color: $danger;
+    border-color: $danger;
+    background-color: transparent;
+}
+
+.btn-outline-warning {
+    @extend .btn-warning;
+    color: $warning;
+    border-color: $warning;
+    background-color: transparent;
+}
