@@ -4,9 +4,28 @@
 * {
     border: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: $background;
 }
 
 .text-center {
     text-align: center;
+}
+
+.container {
+    display: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    .col {
+        padding: 0.75rem 0;
+    }
+
+    &.justify-content-center {
+        justify-content: center;
+    }
 }
