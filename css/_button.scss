@@ -14,7 +14,7 @@
     font-size: 12px;
     text-decoration: none;
     border: 1px solid transparent;
-    @include btn_hover;
+    @include ease-in-out;
 
     &.btn-primary {
         background-color: $primary;
