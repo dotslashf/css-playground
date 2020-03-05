@@ -262,3 +262,28 @@
         }
     }
 }
+
+.btn-group {
+    margin: .25rem 0;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+
+    >.btn:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    >.btn:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    >.btn:first-child {
+        margin-left: 0;
+    }
+
+    .btn-group+.btn-group {
+        margin-left: -1px;
+    }
+}
