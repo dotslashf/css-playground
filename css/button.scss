@@ -1,5 +1,6 @@
-@import "main";
-@import "variable";
+@import 'main';
+@import 'variable';
+@import 'transisition';
 
 .btn {
     margin: 0 0.5rem;
@@ -13,36 +14,69 @@
     font-size: smaller;
     text-decoration: none;
     border: 1px solid transparent;
+    @include btn_hover;
 }
 
 .btn-primary {
     @extend .btn;
     background-color: $primary;
     color: whitesmoke;
+
+    &:hover {
+        background-color: $primary-hover;
+    }
+
+    &.active {
+        background-color: $primary-hover;
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
 }
 
 .btn-secondary {
     @extend .btn;
     background-color: $secondary;
     color: whitesmoke;
+
+    &:hover,
+    &.active {
+        background-color: $secondary-hover;
+    }
 }
 
 .btn-success {
     @extend .btn;
     background-color: $success;
     color: whitesmoke;
+
+    &:hover,
+    &.active {
+        background-color: $success-hover;
+    }
 }
 
 .btn-warning {
     @extend .btn;
     background-color: $warning;
     color: $dark;
+
+    &:hover,
+    &.active {
+        background-color: $warning-hover;
+    }
 }
 
 .btn-danger {
     @extend .btn;
     background-color: $danger;
     color: whitesmoke;
+
+    &:hover,
+    &.active {
+        background-color: $danger-hover;
+    }
 }
 
 .btn-outline-primary {
@@ -50,6 +84,15 @@
     color: $primary;
     border-color: $primary;
     background-color: transparent;
+
+    &:hover,
+    &.active {
+        background-color: $primary;
+        color: whitesmoke;
+    }
+
+    ;
+
 }
 
 .btn-outline-secondary {
@@ -57,6 +100,12 @@
     color: $secondary;
     border-color: $secondary;
     background-color: transparent;
+
+    &:hover,
+    &.active {
+        background-color: $secondary;
+        color: whitesmoke;
+    }
 }
 
 .btn-outline-success {
@@ -64,6 +113,12 @@
     color: $success;
     border-color: $success;
     background-color: transparent;
+
+    &:hover,
+    &.active {
+        background-color: $success;
+        color: whitesmoke;
+    }
 }
 
 .btn-outline-danger {
@@ -71,6 +126,12 @@
     color: $danger;
     border-color: $danger;
     background-color: transparent;
+
+    &:hover,
+    &.active {
+        background-color: $danger;
+        color: whitesmoke;
+    }
 }
 
 .btn-outline-warning {
@@ -78,4 +139,10 @@
     color: $warning;
     border-color: $warning;
     background-color: transparent;
+
+    &:hover,
+    &.active {
+        background-color: $warning;
+        color: $dark
+    }
 }
