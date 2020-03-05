@@ -1,0 +1,108 @@
+@import 'variable';
+@import 'transition';
+
+.badge {
+    padding: 0.1rem 0.5rem;
+    background: transparent;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    font-size: 75%;
+    text-decoration: none;
+    border: 1px solid transparent;
+    line-height: 1;
+    vertical-align: baseline;
+    @include badge_hover;
+
+    &.badge-pill {
+        border-radius: 3rem;
+    }
+
+    &.badge-primary {
+        background-color: $primary;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $primary-hover;
+        }
+
+        &.active {
+            background-color: $primary-hover;
+
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
+
+    &.badge-secondary {
+        background-color: $secondary;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $secondary-hover;
+        }
+
+        &.active {
+            background-color: $secondary-hover;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+
+    &.badge-success {
+        background-color: $success;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $success-hover;
+        }
+
+        &.active {
+            background-color: $success-hover;
+
+            &:hover {
+                background-color: $success;
+            }
+        }
+    }
+
+    &.badge-warning {
+        background-color: $warning;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $warning-hover;
+        }
+
+        &.active {
+            background-color: $warning-hover;
+
+            &:hover {
+                background-color: $warning;
+            }
+        }
+    }
+
+    &.badge-danger {
+        background-color: $danger;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $danger-hover;
+        }
+
+        &.active {
+            background-color: $danger-hover;
+
+            &:hover {
+                background-color: $danger;
+            }
+        }
+    }
+
+}
