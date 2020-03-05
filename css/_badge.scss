@@ -25,11 +25,11 @@
         color: $white;
 
         &:hover {
-            background-color: $primary-accent;
+            background-color: darken($color: $primary, $amount: 10);
         }
 
         &.active {
-            background-color: $primary-accent;
+            background-color: darken($color: $primary, $amount: 10);
 
             &:hover {
                 background-color: $primary;
@@ -42,11 +42,11 @@
         color: $white;
 
         &:hover {
-            background-color: $secondary-accent;
+            background-color: darken($color: $secondary, $amount: 10);
         }
 
         &.active {
-            background-color: $secondary-accent;
+            background-color: darken($color: $secondary, $amount: 10);
 
             &:hover {
                 background-color: $secondary;
@@ -59,11 +59,11 @@
         color: $white;
 
         &:hover {
-            background-color: $success-accent;
+            background-color: darken($color: $success, $amount: 10);
         }
 
         &.active {
-            background-color: $success-accent;
+            background-color: darken($color: $success, $amount: 10);
 
             &:hover {
                 background-color: $success;
@@ -76,11 +76,11 @@
         color: $white;
 
         &:hover {
-            background-color: $warning-accent;
+            background-color: darken($color: $warning, $amount: 10);
         }
 
         &.active {
-            background-color: $warning-accent;
+            background-color: darken($color: $warning, $amount: 10);
 
             &:hover {
                 background-color: $warning;
@@ -93,11 +93,11 @@
         color: $white;
 
         &:hover {
-            background-color: $danger-accent;
+            background-color: darken($color: $danger, $amount: 10);
         }
 
         &.active {
-            background-color: $danger-accent;
+            background-color: darken($color: $danger, $amount: 10);
 
             &:hover {
                 background-color: $danger;
