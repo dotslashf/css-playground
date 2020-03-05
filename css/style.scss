@@ -29,3 +29,32 @@
         justify-content: center;
     }
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &.text-primary {
+        color: $primary !important;
+    }
+
+    &.text-secondary {
+        color: $secondary !important;
+    }
+
+    &.text-success {
+        color: $success !important;
+    }
+
+    &.text-warning {
+        color: $warning !important;
+    }
+
+    &.text-danger {
+        color: $danger !important;
+    }
+
+}
