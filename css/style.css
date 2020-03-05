@@ -205,4 +205,13 @@
   background-color: transparent;
   color: #feca57;
 }
-/*# sourceMappingURL=button.css.map */
+
+* {
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
