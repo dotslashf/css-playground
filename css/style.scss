@@ -1,8 +1,10 @@
-@import 'button';
+// @import 'button';
+@import 'variable';
 
 * {
     border: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: $background;
 }
 
 .text-center {
