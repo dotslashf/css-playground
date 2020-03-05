@@ -17,14 +17,14 @@
 
     &.btn-primary {
         background-color: $primary;
-        color: whitesmoke;
+        color: $white;
 
         &:hover {
-            background-color: $primary-hover;
+            background-color: $primary-accent;
         }
 
         &.active {
-            background-color: $primary-hover;
+            background-color: $primary-accent;
 
             &:hover {
                 background-color: $primary;
@@ -34,14 +34,14 @@
 
     &.btn-secondary {
         background-color: $secondary;
-        color: whitesmoke;
+        color: $white;
 
         &:hover {
-            background-color: $secondary-hover;
+            background-color: $secondary-accent;
         }
 
         &.active {
-            background-color: $secondary-hover;
+            background-color: $secondary-accent;
 
             &:hover {
                 background-color: $secondary;
@@ -51,14 +51,14 @@
 
     &.btn-success {
         background-color: $success;
-        color: whitesmoke;
+        color: $white;
 
         &:hover {
-            background-color: $success-hover;
+            background-color: $success-accent;
         }
 
         &.active {
-            background-color: $success-hover;
+            background-color: $success-accent;
 
             &:hover {
                 background-color: $success;
@@ -68,14 +68,14 @@
 
     &.btn-warning {
         background-color: $warning;
-        color: whitesmoke;
+        color: $dark;
 
         &:hover {
-            background-color: $warning-hover;
+            background-color: $warning-accent;
         }
 
         &.active {
-            background-color: $warning-hover;
+            background-color: $warning-accent;
 
             &:hover {
                 background-color: $warning;
@@ -85,14 +85,14 @@
 
     &.btn-danger {
         background-color: $danger;
-        color: whitesmoke;
+        color: $white;
 
         &:hover {
-            background-color: $danger-hover;
+            background-color: $danger-accent;
         }
 
         &.active {
-            background-color: $danger-hover;
+            background-color: $danger-accent;
 
             &:hover {
                 background-color: $danger;
@@ -107,12 +107,12 @@
 
         &:hover {
             background-color: $primary;
-            color: whitesmoke;
+            color: $white;
         }
 
         &.active {
             background-color: $primary;
-            color: whitesmoke;
+            color: $white;
 
             &:hover {
                 background-color: transparent;
@@ -128,12 +128,12 @@
 
         &:hover {
             background-color: $secondary;
-            color: whitesmoke;
+            color: $white;
         }
 
         &.active {
             background-color: $secondary;
-            color: whitesmoke;
+            color: $white;
 
             &:hover {
                 background-color: transparent;
@@ -149,12 +149,12 @@
 
         &:hover {
             background-color: $success;
-            color: whitesmoke;
+            color: $white;
         }
 
         &.active {
             background-color: $success;
-            color: whitesmoke;
+            color: $white;
 
             &:hover {
                 background-color: transparent;
@@ -170,12 +170,12 @@
 
         &:hover {
             background-color: $danger;
-            color: whitesmoke;
+            color: $white;
         }
 
         &.active {
             background-color: $danger;
-            color: whitesmoke;
+            color: $white;
 
             &:hover {
                 background-color: transparent;
@@ -191,12 +191,12 @@
 
         &:hover {
             background-color: $warning;
-            color: whitesmoke
+            color: $dark;
         }
 
         &.active {
             background-color: $warning;
-            color: whitesmoke;
+            color: $white;
 
             &:hover {
                 background-color: transparent;
