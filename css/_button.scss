@@ -2,7 +2,7 @@
 @import 'transition';
 
 .btn {
-    padding: 0.5rem 10px;
+    padding: $button-normal;
     background: transparent;
     font-weight: 700;
     border-radius: 6px;
@@ -14,6 +14,14 @@
     text-decoration: none;
     border: 1px solid transparent;
     @include ease-in-out;
+
+    &.btn-sm {
+        padding: $button-small
+    }
+
+    &.btn-lg {
+        padding: $button-large
+    }
 
     &.btn-primary {
         background-color: $primary;
