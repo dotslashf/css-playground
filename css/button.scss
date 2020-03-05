@@ -15,134 +15,196 @@
     text-decoration: none;
     border: 1px solid transparent;
     @include btn_hover;
-}
 
-.btn-primary {
-    @extend .btn;
-    background-color: $primary;
-    color: whitesmoke;
+    &.btn-primary {
+        background-color: $primary;
+        color: whitesmoke;
 
-    &:hover {
-        background-color: $primary-hover;
+        &:hover {
+            background-color: $primary-hover;
+        }
+
+        &.active {
+            background-color: $primary-hover;
+
+            &:hover {
+                background-color: $primary;
+            }
+        }
     }
 
-    &.active {
-        background-color: $primary-hover;
+    &.btn-secondary {
+        background-color: $secondary;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $secondary-hover;
+        }
+
+        &.active {
+            background-color: $secondary-hover;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+
+    &.btn-success {
+        background-color: $success;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $success-hover;
+        }
+
+        &.active {
+            background-color: $success-hover;
+
+            &:hover {
+                background-color: $success;
+            }
+        }
+    }
+
+    &.btn-warning {
+        background-color: $warning;
+        color: $dark;
+
+        &:hover {
+            background-color: $warning-hover;
+        }
+
+        &.active {
+            background-color: $warning-hover;
+
+            &:hover {
+                background-color: $warning;
+            }
+        }
+    }
+
+    &.btn-danger {
+        background-color: $danger;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $danger-hover;
+        }
+
+        &.active {
+            background-color: $danger-hover;
+
+            &:hover {
+                background-color: $danger;
+            }
+        }
+    }
+
+    &.btn-outline-primary {
+        color: $primary;
+        border-color: $primary;
+        background-color: transparent;
 
         &:hover {
             background-color: $primary;
+            color: whitesmoke;
+        }
+
+        &.active {
+            background-color: $primary;
+            color: whitesmoke;
+
+            &:hover {
+                background-color: transparent;
+                color: $primary;
+            }
         }
     }
-}
 
-.btn-secondary {
-    @extend .btn;
-    background-color: $secondary;
-    color: whitesmoke;
+    &.btn-outline-secondary {
+        color: $secondary;
+        border-color: $secondary;
+        background-color: transparent;
 
-    &:hover,
-    &.active {
-        background-color: $secondary-hover;
-    }
-}
+        &:hover {
+            background-color: $secondary;
+            color: whitesmoke;
+        }
 
-.btn-success {
-    @extend .btn;
-    background-color: $success;
-    color: whitesmoke;
+        &.active {
+            background-color: $secondary;
+            color: whitesmoke;
 
-    &:hover,
-    &.active {
-        background-color: $success-hover;
-    }
-}
-
-.btn-warning {
-    @extend .btn;
-    background-color: $warning;
-    color: $dark;
-
-    &:hover,
-    &.active {
-        background-color: $warning-hover;
-    }
-}
-
-.btn-danger {
-    @extend .btn;
-    background-color: $danger;
-    color: whitesmoke;
-
-    &:hover,
-    &.active {
-        background-color: $danger-hover;
-    }
-}
-
-.btn-outline-primary {
-    @extend .btn-primary;
-    color: $primary;
-    border-color: $primary;
-    background-color: transparent;
-
-    &:hover,
-    &.active {
-        background-color: $primary;
-        color: whitesmoke;
+            &:hover {
+                background-color: transparent;
+                color: $secondary;
+            }
+        }
     }
 
-    ;
+    &.btn-outline-success {
+        color: $success;
+        border-color: $success;
+        background-color: transparent;
 
-}
+        &:hover {
+            background-color: $success;
+            color: whitesmoke;
+        }
 
-.btn-outline-secondary {
-    @extend .btn-secondary;
-    color: $secondary;
-    border-color: $secondary;
-    background-color: transparent;
+        &.active {
+            background-color: $success;
+            color: whitesmoke;
 
-    &:hover,
-    &.active {
-        background-color: $secondary;
-        color: whitesmoke;
+            &:hover {
+                background-color: transparent;
+                color: $success;
+            }
+        }
     }
-}
 
-.btn-outline-success {
-    @extend .btn-success;
-    color: $success;
-    border-color: $success;
-    background-color: transparent;
+    &.btn-outline-danger {
+        color: $danger;
+        border-color: $danger;
+        background-color: transparent;
 
-    &:hover,
-    &.active {
-        background-color: $success;
-        color: whitesmoke;
+        &:hover {
+            background-color: $danger;
+            color: whitesmoke;
+        }
+
+        &.active {
+            background-color: $danger;
+            color: whitesmoke;
+
+            &:hover {
+                background-color: transparent;
+                color: $danger;
+            }
+        }
     }
-}
 
-.btn-outline-danger {
-    @extend .btn-danger;
-    color: $danger;
-    border-color: $danger;
-    background-color: transparent;
+    &.btn-outline-warning {
+        color: $warning;
+        border-color: $warning;
+        background-color: transparent;
 
-    &:hover,
-    &.active {
-        background-color: $danger;
-        color: whitesmoke;
+        &:hover {
+            background-color: $warning;
+            color: $dark
+        }
+
+        &.active {
+            background-color: $warning;
+            color: whitesmoke;
+
+            &:hover {
+                background-color: transparent;
+                color: $warning;
+            }
+        }
+
     }
-}
 
-.btn-outline-warning {
-    @extend .btn-warning;
-    color: $warning;
-    border-color: $warning;
-    background-color: transparent;
-
-    &:hover,
-    &.active {
-        background-color: $warning;
-        color: $dark
-    }
 }
